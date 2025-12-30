@@ -1,0 +1,156 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #eee;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.order-summary {
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+}
+
+.pizza-card {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+}
+
+.pizza-card.selected {
+  border-color: #d62828;
+  background-color: #ffe5e5;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d62828;
+}
+
+.pizza-card {
+  text-align: center;
+}
+
+button {
+  border: none;
+  border-radius: 6px;
+}
+
+.order-summary button {
+  background-color: #d62828;
+  color: white;
+}
+
+.pizza-name {
+  font-weight: bold;
+  margin: 6px 0;
+}
+
+.complete-order {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.option-group {
+  text-align: center;
+}
+
+.option-group label {
+  margin: 0 10px;
+}
+
+.layout {
+  display: flex;
+  gap: 20px;
+}
+
+.left {
+  flex: 2;
+}
+
+.right {
+  flex: 1;
+  background: #fff5f5;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: auto;
+}
+
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+}
+
+.floating {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+
+  width: 260px;
+  background: #fff5f5;
+  padding: 12px;
+  border-radius: 8px;
+
+  font-size: 0.85rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.toast {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+
+  background: #28a745;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 6px;
+
+  font-size: 0.9rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  animation: fadeInOut 3s ease;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
